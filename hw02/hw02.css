@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.box {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+
+.box div {
+  background-color: antiquewhite;
+  text-align: center;
+  line-height: 5vh;
+  width: 25vw;
+  height: 5vh;
+}
+
+@media only screen and (max-width: 768px){
+  .box {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .box div {
+    width: 48vw;
+  }
+}
+
+@media only screen and (max-width: 480px){
+  .box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .box div {
+    width: 100vw;
+  }
+}
