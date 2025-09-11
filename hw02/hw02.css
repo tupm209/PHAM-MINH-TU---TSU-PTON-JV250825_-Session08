@@ -1,0 +1,25 @@
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.box div {
+  background-color: antiquewhite;
+  text-align: center;
+  line-height: 5vh;
+  width: calc(25% - 10px);
+  height: 5vh;
+}
+
+@media only screen and (max-width: 768px){
+  .box div {
+    width: calc(50% - 10px);
+  }
+}
+
+@media only screen and (max-width: 480px){
+  .box div {
+    width: calc(100% - 10px);
+  }
+}
