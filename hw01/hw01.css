@@ -1,0 +1,26 @@
+.box {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 2px;
+  background-color: antiquewhite;
+}
+
+.box div {
+  background-color: aquamarine;
+  text-align: center;
+}
+
+.item3 {
+  grid-column: 1 / span 2;
+}
+
+@media only screen and (max-width: 600px) {
+  .box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .item1, .item2 {
+    border-bottom: 1px solid antiquewhite;
+  }
+}
