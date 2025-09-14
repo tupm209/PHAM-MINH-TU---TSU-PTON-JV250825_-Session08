@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ul li {
+  width: 50%;
+  background-color: black;
+  color: white;
+  list-style: none;
+  padding: 20px;
+}
+
+@media only screen and (max-width: 480px) {
+  ul {
+    display: block;
+  }
+
+  ul li {
+    width: 100%;
+  }
+}
