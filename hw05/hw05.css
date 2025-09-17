@@ -1,0 +1,336 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* header css */
+.header {
+  display: flex;
+  height: 80px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.header .nav-bar {
+  display: flex;
+}
+
+.header .nav-bar .list-item {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+}
+
+.header .nav-bar .nav-list-right {
+  border-left: 1px solid gray;
+  margin-left: 10px;
+  padding-left: 10px;
+}
+
+/* main css */
+.wrap {
+  background-color: rgb(247, 247, 247);
+  padding: 40px 0;
+  overflow: hidden;
+  height: 130vh;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* left side css */
+.container .left-side .detail-bar span {
+  margin: 0 10px;
+}
+
+.detail-bar .last-detail {
+  color: gainsboro;
+}
+
+.container .left-side .title {
+  margin: 30px 10px;
+}
+
+.hr-1 {
+  width: 20vw;
+}
+
+.tour-info {
+  margin: 20px 0;
+}
+
+.tour-info h2 {
+  margin: 10px;
+  font-size: 30px;
+}
+
+.tour-info .form .box {
+  background-color: rgb(205, 205, 205);
+  border-radius: 10px;
+  margin: 10px;
+  padding: 5px 10px;
+  width: 20vw;
+  height: 60px;
+}
+
+.tour-info .form .box input[type="text"] {
+  background-color: rgb(205, 205, 205);
+  border: none;
+  width: 15vw;
+}
+
+.tour-info .form .box div {
+  float: right;
+}
+
+.card {
+  margin: 40px 0;
+}
+
+.card .box-card {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px 0px;
+  gap: 10px;
+  /* width: 50vw; */
+}
+
+.card-info .number input[type="text"] {
+  width: 300px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.card-info .date input[type="text"] {
+  width: calc(100% - 10px);
+  height: 40px;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.card-info .cvv input[type="password"] {
+  width: calc(100% - 5px);
+  height: 40px;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.card-info .mini-box {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-info .btn {
+  background-color: blue;
+  color: white;
+  border-radius: 20px;
+  width: 150px;
+  height: 30px;
+  border: none;
+  margin-top: 10px;
+}
+
+/* right side css */
+.container .right-side {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid rgb(226, 226, 226);
+  margin-top: 5vh;
+  height: 90vh;
+  line-height: 1.7em;
+}
+
+.container .right-side .right-side-img img {
+  margin: 20px 0;
+  border-radius: 10px;
+}
+
+.container .right-side .hr-2 {
+  width: 15vh;
+  border: 1px solid rgba(215, 215, 215, 0.5);
+}
+
+.container .right-side .checkin-box {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container .right-side .checkin-box .checkin-box-item {
+  width: calc(50% - 10px);
+  height: 40px;
+  padding-left: 10px;
+  margin: 20px 0;
+}
+
+.container .right-side h3 {
+  margin: 10px 0;
+  font-size: 1.5em;
+}
+
+.container .right-side .payment {
+  display: flex;
+  justify-content: space-between;
+  line-height: 3em;
+}
+
+.container .right-side .payment .pay-right-side {
+  font-weight: bold;
+}
+
+.container .right-side .payment .pay-left-side {
+  color: rgb(167, 167, 167);
+}
+
+.container .right-side .payment .pay-left-side .total {
+  color: black;
+  font-weight: bold;
+}
+
+.container .right-side .report {
+  text-align: center;
+  color: rgb(167, 167, 167);
+}
+
+.container .right-side .text-1 {
+  color: rgb(167, 167, 167)
+}
+
+.container .right-side .text-2 {
+  color: rgb(63, 63, 63)
+}
+
+.wrap .get-email {
+  position: absolute;
+  top: 125vh;
+  left: 20%;
+  margin: 40px 0;
+  padding: 20px;
+  display: flex;
+  background-image: url(/hw05/assets/bg.png);
+  width: 60vw;
+  height: 200px;
+  border-radius: 20px;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+}
+
+.wrap .get-email .mail-box {
+  width: 300px;
+  height: 40px;
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.wrap .get-email .mail-box input[type="email"] {
+  border: none;
+  width: 70%;
+}
+
+.wrap .get-email .mail-box .btn {
+  border: none;
+  width: 30%;
+  border-radius: 5px;
+  background-color: rgb(97, 97, 97);
+  color: white;
+}
+
+/* footer css */
+
+.footer-container {
+  height: 60vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  line-height: 3em;
+  padding: 30px;
+}
+
+.footer-container .left-item {
+  margin-bottom: 20vh;
+}
+
+.footer-container .right-item {
+  display: flex;
+  justify-content: space-evenly;
+  width: 40vw;
+}
+
+/* mobile */
+@media only screen and (max-width: 480px){
+  .wrap {
+    padding: 0 20px;
+    height: 250vh;
+  }
+  
+  .header .nav-list-right .list-item li:nth-child(2) {display: none;}
+  .header .nav-list-right .list-item li:nth-child(3) {display: none;}
+  .container .left-side .detail-bar {display: none;}
+  .container .left-side .hr-1 {width: 80vw;}
+  .container .left-side .tour-info .box {width: 80vw;}
+  .container .left-side .tour-info .box input {width: 50vw;}
+  .container {position: relative;}
+  
+  .container .left-side .card {
+    position: absolute;
+    top: 130vh;
+  }
+
+  .container .left-side .card .kind-of-card {width: 100vw;}
+  
+  .container .left-side .card .box-card img {width: 80vw;}
+
+  .container .left-side .card .card-info .btn {width: 80vw; height: 50px;}
+
+  .container .right-side {
+    position: absolute;
+    top: 35vh;
+  }
+
+  .wrap .get-email {
+    top: 235vh;
+    flex-wrap: wrap;
+    width: 80vw;
+    left: 6vw;
+    padding-left: 20px;
+  }
+
+  .wrap .get-email .mail-box {
+    width: 70vw;
+    height: 60px;
+  }
+
+  .footer-container {
+    height: 115vh;
+    flex-wrap: wrap-reverse;
+    align-content: space-evenly;
+  }
+
+  .footer-container .right-item {display: block; width: 100vw;}
+
+  .footer-container .right-item .item {
+    width: 100vw;
+    border-top: 1px solid rgba(201, 201, 201, 0.337);
+    margin: 20px 0;
+  }
+
+  .footer-container .right-item .item:nth-child(1) {
+    border-top: none;
+  }
+
+  .footer-container .left-item {width: 100vw;}
+  .footer-container .left-item p {display: none;}
+}
+
